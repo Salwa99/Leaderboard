@@ -1,6 +1,20 @@
+body {
+  background: url('https://images7.alphacoders.com/805/805197.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: sans-serif;
+}
+
 h1 {
-  color: rgb(37, 37, 37);
+  color: rgb(243, 234, 234);
   margin: 5%;
+  text-align: center;
+  font-size: 4rem;
+}
+
+h2 {
+  color: rgb(255, 251, 251);
+  font-size: 2rem;
 }
 
 .main {
@@ -21,18 +35,28 @@ h1 {
   justify-content: space-between;
 }
 
-table {
-  border: 1px solid black;
-  width: 100%;
+.scores {
+  border: 3px solid rgb(60, 160, 243);
+  background: rgb(133, 150, 229);
+  height: 30vh;
+  border-radius: 10px;
+  overflow-y: scroll;
 }
 
-.scores {
-  border: 1px solid black;
+.scores::-webkit-scrollbar {
+  display: none;
 }
 
 .scores p {
   margin: 0;
-  padding: 2%;
+  padding: 4%;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.scores p:hover {
+  cursor: pointer;
+  color: rgb(67, 229, 250);
 }
 
 .scores p:nth-child(even) {
@@ -50,7 +74,32 @@ form {
   gap: 20px;
 }
 
+input {
+  outline: none;
+  padding: 3%;
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
+
+input:focus {
+  border: 3px solid rgb(74, 197, 235);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  width: 35%;
+  height: 2.2rem;
+  background: rgb(70, 125, 197);
+  font-size: 1.2rem;
+}
+
+button:hover {
+  background: rgb(77, 183, 209);
+}
+
 #submitBtn {
-  width: 20%;
   align-self: end;
 }
