@@ -9,7 +9,7 @@ export const getData = async () => {
   const getContent = async (data) => {
     data.result.forEach((item) => {
       document.querySelector(".scores").innerHTML += `
-              <p>${item.user} : ${item.score}</p>
+              <p>🧑‍🚀 ${item.user} : ${item.score}</p>
           `;
     });
   };
