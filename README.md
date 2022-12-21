@@ -27,7 +27,7 @@
 
 # 🚀 Live Demo <a name="live-demo"></a>
 
-[Leaderboard]()
+[Leaderboard](https://salwa99.github.io/Leaderboard/)
 
 ### Server
 
