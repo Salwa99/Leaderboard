@@ -9,6 +9,7 @@ const name = document.querySelector("#name");//nameInput
 const score = document.querySelector("#score");//scoreInput
 const refreshBtn = document.querySelector("#refreshBtn");
 
+
 submitBtn.addEventListener("click", (e) => {
       const list = new Leaderboard(name.value, score.value);
       e.preventDefault();
@@ -28,3 +29,9 @@ submitBtn.addEventListener("click", (e) => {
   
 
   window.addEventListener("DOMContentLoaded", getData);
+
+  document.querySelectorAll('input[type="number"]').forEach(input => {
+    input.oninput = () =>{
+      if(input.value.length > input.maxLength) input.value = input.value.slice(0, input.maxLength);
+    }
+  });
