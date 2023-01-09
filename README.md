@@ -7,7 +7,7 @@
 
 </div>
 
-## A solo programming project that heighlights the use of webpack to bundle JavaScript, ES6 syntax, callbacks and promise 
+## A solo programming project that heighlights the use of webpack to bundle JavaScript, ES6 syntax, callbacks and promise functions
 
 # 🛠 Built With
 
